@@ -32,18 +32,25 @@
 
         <div class="col s6 md3">
           <div class="card z-depth-0">
+
+            <img src="img/pizza.svg" class="pizza">
+
             <div class="card-content center">
+
               <h6>Name: <?php echo htmlspecialchars($pizza['title']); ?></h6>
-              <h6>Ingredients:</h6>
+
               <ul>
                 <?php foreach(explode(',', $pizza['ingredients']) as $ing): ?>
                   <li><?php echo htmlspecialchars($ing) ?></li>
                 <?php endforeach; ?>
               </ul>
+              
             </div>
+
             <div class="card-action right-align">
               <a href="details.php?id=<?php echo $pizza['id']; ?>" class="brand-text">More Info...</a>
             </div>
+
           </div>
         </div>
 

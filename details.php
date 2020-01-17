@@ -40,7 +40,7 @@
 
   <?php include('templates/header.php'); ?>
 
-  <div class="container center">
+  <div class="container center grey-text">
     <?php if ($pizza): ?>
 
       <h4><?php echo htmlspecialchars($pizza['title']); ?></h4>
@@ -58,7 +58,7 @@
     <?php else: ?>
 
       <h5>No such pizza exists!</h5>
-      
+
     <?php endif; ?>
   </div>
 
